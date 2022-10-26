@@ -1,0 +1,9 @@
+.profile {
+  display: flex;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.profileContainer {
+  flex: 9.5;
+}

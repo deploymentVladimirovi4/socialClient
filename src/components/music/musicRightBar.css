@@ -1,0 +1,156 @@
+.musicRightBar {
+  z-index: 9999;
+  position: relative;
+  flex: 2.5;
+  position: sticky;
+  top: 60px;
+  right: 0;
+  padding: 10px;
+  overflow-y: scroll;
+  height: calc(100vh - 60px);
+  background-color: rgba(255, 255, 255, 0.799);
+  -webkit-box-shadow: -9px 1px 19px -11px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: -9px 1px 19px -11px rgba(34, 60, 80, 0.2);
+  box-shadow: -9px 1px 19px -11px rgba(34, 60, 80, 0.2);
+}
+
+.musicRightBarWrapper {
+  padding: 10px;
+}
+
+.musicPlayer {
+  font-size: 13px;
+  position: sticky;
+  height: max-content;
+  top: 0px;
+  right: 400px;
+  padding: 20px 5px;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.607);
+  -webkit-box-shadow: 0px 5px 18px -8px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 5px 18px -8px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 5px 18px -8px rgba(34, 60, 80, 0.2);
+}
+
+.ganres {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  /* flex-direction: column; */
+}
+
+.ganre {
+  cursor: pointer;
+  width: max-content;
+  height: 45px;
+  font-size: 14px;
+  /* line-height: 24px; */
+  margin: 10px 5px;
+  border: none;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: white;
+  color: black;
+  -webkit-box-shadow: 0px 5px 8px -5px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 5px 8px -5px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 5px 8px -5px rgba(34, 60, 80, 0.2);
+}
+
+.ganre:hover {
+  -webkit-box-shadow: 0px 5px 24px -8px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 5px 24px -8px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 5px 24px -8px rgba(34, 60, 80, 0.2);
+}
+
+.activeGanre {
+  background-color: rgb(131, 100, 199);
+  color: white;
+  font-weight: bold;
+}
+
+.searchMusicInputWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.searchMusicIcon {
+  position: absolute;
+  right: 15px;
+  top: 23px;
+  color: gray;
+}
+
+.searchMusicInput {
+  width: 89%;
+  cursor: pointer;
+  outline: none;
+  height: 25px;
+  font-size: 14px;
+  margin-top: 10px;
+  border: none;
+  padding: 8px;
+  border-radius: 8px;
+  background-color: white;
+  color: black;
+  -webkit-box-shadow: 0px 5px 8px -5px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 5px 8px -5px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 5px 8px -5px rgba(34, 60, 80, 0.2);
+}
+
+
+
+
+@media (max-width: 767px) {
+
+  .musicRightBar {
+    padding: 4px 0;
+    position: sticky;
+    bottom: 0;
+  }
+  .musicRightBarWrapper {
+    display: flex;
+    padding: 0;
+    justify-content: space-around;
+    gap: 1rem;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .ganres {
+    flex: 7;
+    margin: 0;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 130px;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    max-width: 200px;
+  }
+  .ganre {
+    font-size: 12px;
+    height: 25px;
+    width: max-content;
+    padding: 7px;
+    margin: 5px;
+  }
+  .musicPlayer {
+    flex: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 150px;
+    font-size: 13px;
+    height: max-content;
+    padding: 10px;
+    border-radius: 15px;
+    right: 0;
+    position:inherit;
+    background-color: rgba(255, 255, 255, 0.941);
+  }
+  .searchMusicInputWrapper, .searchBtn {
+    display: none;
+  }
+}

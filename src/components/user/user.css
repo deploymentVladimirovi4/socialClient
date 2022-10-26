@@ -1,0 +1,298 @@
+.user {
+  background-color: rgba(255, 255, 255, 0.523);
+  height: max-content;
+  display: flex;
+}
+
+.userLeft {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10px 10px 10px 20px;
+}
+
+.userRight {
+  flex: 6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10px;
+  margin-right: 20px;
+}
+
+.profileTop {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logoutBtn {
+  color: gray;
+  margin-right: 20px;
+  cursor: pointer;
+  width: max-content;
+  border: 1px solid rgba(161, 158, 161, 0.396);
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 300;
+  background-color: rgba(193, 193, 193, 0);
+}
+
+.logoutBtn:hover {
+  color: rgba(0, 0, 0, 0.793);
+  /* border: 1px solid rgba(113, 113, 113, 0.89); */
+  -webkit-box-shadow: 3px 5px 25px -13px rgba(34, 60, 80, 0.39);
+  -moz-box-shadow: 3px 5px 25px -13px rgba(34, 60, 80, 0.39);
+  box-shadow: 3px 5px 25px -13px rgba(34, 60, 80, 0.39);
+  transition-duration: 300ms;
+}
+
+.profileImg {
+  display: flex;
+  width: 100%;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.userMobileProfilePhoto {
+  display: none;
+}
+
+.profileImg>img{
+  width: 100%;
+  height: 440px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border: 3px solid rgba(255, 255, 255, 0.515);
+  -webkit-box-shadow: 3px 5px 25px -13px rgba(34, 60, 80, 0.39);
+  -moz-box-shadow: 3px 5px 25px -13px rgba(34, 60, 80, 0.39);
+  box-shadow: 3px 5px 25px -13px rgba(34, 60, 80, 0.39);
+}
+
+.profileInfo {
+  color: rgb(72, 72, 72);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 10px;
+  min-height: 280px;
+  height: max-content;
+  width: 100%;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.955);
+  -webkit-box-shadow: 3px 5px 25px -13px rgba(34, 60, 80, 0.39);
+  -moz-box-shadow: 3px 5px 25px -13px rgba(34, 60, 80, 0.39);
+  box-shadow: 3px 5px 25px -13px rgba(34, 60, 80, 0.39);
+}
+
+.editProfileFormWrapper {
+  color: rgb(72, 72, 72);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  height: max-content;
+  width: 100%;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.777);
+  -webkit-box-shadow: 3px 5px 25px -13px rgba(34, 60, 80, 0.39);
+  -moz-box-shadow: 3px 5px 25px -13px rgba(34, 60, 80, 0.39);
+  box-shadow: 3px 5px 25px -13px rgba(34, 60, 80, 0.39);
+}
+
+.editProfileForm {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.editProfileForm input {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 5px;
+  border-radius: 10px;
+  padding: 8px;
+  padding-left: 10px;
+}
+
+.editProfileForm input:hover {
+  transition-duration: 200ms;
+  -webkit-box-shadow: 3px 5px 14px -6px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 3px 5px 14px -6px rgba(34, 60, 80, 0.2);
+  box-shadow: 3px 5px 14px -6px rgba(34, 60, 80, 0.2);
+}
+
+.editProfileForm input:focus {
+  -webkit-box-shadow: 3px 5px 14px -6px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 3px 5px 14px -6px rgba(34, 60, 80, 0.2);
+  box-shadow: 3px 5px 14px -6px rgba(34, 60, 80, 0.2);
+}
+
+.editProfileForm select {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 5px;
+  padding: 9px;
+  border-radius: 10px;
+}
+
+.editProfileForm select:hover {
+  transition-duration: 200ms;
+  -webkit-box-shadow: 3px 5px 14px -6px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 3px 5px 14px -6px rgba(34, 60, 80, 0.2);
+  box-shadow: 3px 5px 14px -6px rgba(34, 60, 80, 0.2);
+}
+
+.editProfileForm span {
+  color: gray;
+}
+
+.formBlock {
+  margin:10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.userName {
+  font-size: 24px;
+  font-weight: 500;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.editProfile {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  opacity: 0.3;
+}
+
+.editProfileIcon {
+  cursor: pointer;
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.editProfile:hover {
+  opacity: 1;
+  transition-duration: 200ms;
+}
+
+.editProfileText {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.submitProfileEditBtn {
+  width: 30%;
+  align-self: center;
+  cursor: pointer;
+  font-size: 16px;
+  height: 40px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.801);
+  border-radius: 5px;
+  margin: 10px auto;
+}
+
+.submitProfileEditBtn:hover {
+  transition-duration: 100ms;
+  background-color: rgb(255, 255, 255);
+  -webkit-box-shadow: 3px 5px 14px -6px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 3px 5px 14px -6px rgba(34, 60, 80, 0.2);
+  box-shadow: 3px 5px 14px -6px rgba(34, 60, 80, 0.2);
+}
+
+.submitProfileEditBtn:active {
+  color:rgb(141, 42, 141);
+}
+
+.mainInfo {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.birthday {
+  margin: 5px 0;
+}
+
+.dexcriptionContainer {
+  max-width: 100%;
+  margin: 20px;
+}
+
+.userPosts {
+  width: 100%;
+}
+
+.profileMedia {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.userVideoWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1000px) {
+
+  .userLeft {
+    display: none;
+  }
+
+  .userMobileProfilePhoto {
+    display: flex;
+  }
+
+  .mobileProfilrImg {
+    height: 200px;
+    width: auto;
+    margin: 10px 20px;
+    border-radius: 10px;
+  }
+
+  .profileMedia {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  .userRight {
+    margin: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .userLeft {
+    display: none;
+  }
+
+  .userRight {
+    margin: 7px;
+  }
+
+  .userName {
+    font-size: 18px;
+  }
+}

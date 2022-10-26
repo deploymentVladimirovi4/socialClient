@@ -1,0 +1,56 @@
+.chatMenu {
+  flex: 2.5;
+  position: sticky;
+  top: 60px;
+  right: 0;
+  overflow-y: scroll;
+  height: calc(100vh - 60px);
+  background-color: rgba(255, 255, 255, 0.799);
+  -webkit-box-shadow: -9px 1px 19px -11px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: -9px 1px 19px -11px rgba(34, 60, 80, 0.2);
+  box-shadow: -9px 1px 19px -11px rgba(34, 60, 80, 0.2);
+}
+
+.chatMenuMobile {
+  overflow-x: scroll ;
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100vw;
+  height: max-content;
+  background-color: rgba(255, 255, 255, 0.915);
+}
+
+.chatMenuWrapper {
+  padding: 20px;
+}
+
+.chatMenuWrapperMobile {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.friendsTitle {
+  display: flex;
+  font-weight: 500;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+
+  .chatMenuWrapper {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .chatMenu {
+    display: none;
+  }
+  .chatMenuMobile {
+    display: flex;
+  }
+}

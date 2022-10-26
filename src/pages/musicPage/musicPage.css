@@ -1,0 +1,13 @@
+.musicPage {
+  display: flex;
+  max-width: 1440px;
+  margin: 0 auto;
+  /* height: 100vh; */
+}
+
+@media (max-width: 767px) {
+  .musicPage {
+
+    flex-direction: column;
+  }
+}

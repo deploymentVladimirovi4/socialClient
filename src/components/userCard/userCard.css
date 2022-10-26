@@ -1,0 +1,81 @@
+.userCard {
+  width: 100%;
+  margin: 10px 0;
+}
+
+.userCardWrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.579);
+  -webkit-box-shadow: 1px -1px 8px -3px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 1px -1px 8px -3px rgba(34, 60, 80, 0.2);
+  box-shadow: 1px -1px 8px -3px rgba(34, 60, 80, 0.2);
+}
+
+.userCardLeft {
+  display: flex;
+
+}
+
+.userCardImg {
+  border-radius: 10px;
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.userCadrInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.userCardName {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.userCardDetails {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  gap: 5px;
+}
+
+.userCardBtn {
+  cursor: pointer;
+  width: 120px;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 500;
+  background-color: rgba(255, 255, 255, 0.773);
+  -webkit-box-shadow: 1px -1px 8px -3px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 1px -1px 8px -3px rgba(34, 60, 80, 0.2);
+  box-shadow: 1px -1px 8px -3px rgba(34, 60, 80, 0.2);
+}
+
+.userCardBtn:hover {
+  background-color: white;
+  transition-duration: 300ms;
+}
+
+.userCardBtn:active {
+  color: rgb(151, 50, 167);
+  transition-duration: 10ms;
+  -webkit-box-shadow: 5px 5px 39px -38px rgba(34, 60, 80, 0.6) inset;
+  -moz-box-shadow: 5px 5px 39px -38px rgba(34, 60, 80, 0.6) inset;
+  box-shadow: 5px 5px 39px -38px rgba(34, 60, 80, 0.6) inset;
+}
+
+@media (max-width: 767px) {
+  .userCardWrapper {
+    flex-direction: column;
+  }
+
+  .userCardBtn {
+    display: none;
+  }
+}

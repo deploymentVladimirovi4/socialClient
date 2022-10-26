@@ -1,0 +1,146 @@
+.leftbar {
+  flex: 2.5;
+  position: sticky;
+  top: 60px;
+  left: 0;
+  height: calc(100vh - 60px);
+  overflow-y: scroll;
+  background-color: rgba(255, 255, 255, 0.832);
+  -webkit-box-shadow: 10px 1px 19px -11px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 10px 1px 19px -11px rgba(34, 60, 80, 0.2);
+  box-shadow: 10px 1px 19px -11px rgba(34, 60, 80, 0.2);
+}
+
+.leftbarMobile {
+  display: none;
+}
+
+.leftbarWrapper {
+  padding: 20px;
+}
+
+.leftbarList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  color: black;
+}
+
+.leftbarListItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.leftbarListItemIcon {
+  margin-right: 15px;
+}
+
+.premiumBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.leftbarBtn {
+  cursor: pointer;
+  width: 150px;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 500;
+  background-color: rgba(255, 255, 255, 0.618);
+  -webkit-box-shadow: 1px -1px 8px -3px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 1px -1px 8px -3px rgba(34, 60, 80, 0.2);
+  box-shadow: 1px -1px 8px -3px rgba(34, 60, 80, 0.2);
+}
+
+.leftbarBtn:hover {
+  background-color: white;
+transition-duration: 300ms;
+}
+
+.leftbarBtn:active {
+  color: rgb(151, 50, 167);
+  transition-duration: 10ms;
+  -webkit-box-shadow: 5px 5px 39px -38px rgba(34, 60, 80, 0.6) inset;
+  -moz-box-shadow: 5px 5px 39px -38px rgba(34, 60, 80, 0.6) inset;
+  box-shadow: 5px 5px 39px -38px rgba(34, 60, 80, 0.6) inset;
+}
+
+.leftbarHR {
+  margin: 20px 0;
+}
+
+.birthdayContainer {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  -webkit-box-shadow: 4px 2px 15px -2px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 4px 2px 15px -2px rgba(34, 60, 80, 0.2);
+  box-shadow: 4px 2px 15px -2px rgba(34, 60, 80, 0.2);
+}
+
+.birthdayImg {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.birthdayText {
+  font-weight: 300;
+}
+
+.leftbarMobile {
+  -webkit-box-shadow: 10px 1px 19px -11px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 10px 1px 19px -11px rgba(34, 60, 80, 0.2);
+  box-shadow: 10px 1px 19px -11px rgba(34, 60, 80, 0.2);
+}
+
+@media (max-width: 1000px) {
+
+  .birthdayContainer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .birthdayImg {
+    margin: 10px auto;
+  }
+}
+
+@media (max-width: 767px) {
+.leftbar{ 
+  display: none;
+}
+
+  .leftbarMobile {
+    display: block;
+    position: fixed;
+    top: 60px;
+    left: 0px;
+    width: 40%;
+    min-width: 200px;
+    height: calc(100vh - 60px);
+    z-index: 998;
+    background-color: white;
+    z-index: 66666;
+  }
+  .premiumBtn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .birthdayContainer {
+    width: 80%;
+  }
+
+}

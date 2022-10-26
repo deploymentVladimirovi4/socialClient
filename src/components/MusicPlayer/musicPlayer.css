@@ -1,0 +1,85 @@
+.controllers {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.cursorPointer {
+  cursor: pointer;
+}
+
+.player {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.trackWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.seekbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.seekbarInput {
+  width: 90%;
+  height: 4px;
+}
+
+.volume {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.volumeInput {
+  width: 60%;
+  height: 4px;
+}
+
+.trackTitle {
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
+  margin: 0 auto;
+}
+
+.trackSubtitle {
+  text-align: center;
+  margin: 5px auto;
+}
+
+@media (max-width: 900px) {
+
+  .seekbar>p {
+    display: none;
+  }
+  .seekbar {
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .seekbar {
+    display: none;
+  }
+  .volume {
+    display: none;
+  }
+  .player {
+    width: 130px;
+  }
+  .trackTitle {
+    font-size: 13px;
+  }
+  .trackSubtitle {
+    font-size: 11px;
+  }
+}

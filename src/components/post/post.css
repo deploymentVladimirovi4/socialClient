@@ -1,0 +1,108 @@
+.post {
+  width: 100%;
+  margin: 10px 0;
+  border-radius: 10px;
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  -webkit-box-shadow: 1px -1px 8px -3px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 1px -1px 8px -3px rgba(34, 60, 80, 0.2);
+  box-shadow: 1px -1px 8px -3px rgba(34, 60, 80, 0.2);
+}
+
+.postWrapper {
+  padding: 10px;
+}
+
+.postTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.postTopLeft {
+  display: flex;
+  align-items: center;
+}
+
+.postTopRight {
+
+  right: 10px;
+  position: absolute;
+  cursor: pointer;
+  font-size: 13px;
+  color: gray;
+  margin-right: 10px;
+}
+
+.deleteMessage {
+  position: relative;
+  /* top: px; */
+  right: 20px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  border: 1px solid rgba(138, 138, 138, 0.579);
+  background-color:rgb(255, 255, 255);
+  right: 20px;
+  top: -6px;
+  width: max-content;
+  font-size: 13px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.deleteIcon {
+  color: red;
+  margin-right: 5px;
+}
+
+.PostProfileImg {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.postUserName {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 10px;
+}
+
+.postBody {
+  margin: 20px 0;
+}
+
+.postImg {
+  margin-top: 10px;
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+.postBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.postBottomLeft {
+  display: flex;
+  align-items: center;
+}
+
+.likeIcon {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.postLikeCounter {
+  font-size: 14px;
+}
+
+.postCommentText {
+  cursor: pointer;
+  font-size: 14px;
+}

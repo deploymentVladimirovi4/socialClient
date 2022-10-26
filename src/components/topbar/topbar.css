@@ -1,0 +1,156 @@
+.topbarContainer {
+  height: 60px;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: rgb(131, 100, 199);
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 99999;
+}
+
+.logo {
+  font-size: 28px;
+  margin-left: 20px;
+  object-fit: cover;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+}
+
+.searchbar {
+  width: 100%;
+  height: 30px;
+  background-color: white;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.searchIcon {
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+.searchInput {
+  width: 90%;
+  border: none;
+  outline: none;
+}
+
+.topbarLeft {
+  flex: 3;
+}
+.topbarCenter {
+  flex: 5;
+}
+.topbarRight {
+  flex: 4;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+}
+
+.topbarLink {
+  margin-left: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.topbarIcons {
+  display: flex;
+}
+
+.topbarIconItem {
+  margin-right: 15px;
+  position: relative;
+}
+
+.topbarIcon {
+  font-size: 22px;
+}
+
+.topbarIconBadge {
+  width: 15px;
+  height: 15px;
+  padding: 1px;
+  background-color: red;
+  border-radius: 100%;
+  color: white;
+  font-size: 10px;
+  position: absolute;
+  top: -7px;
+  right: -7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.topbarImage {
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  object-fit: cover;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.hamburger {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+
+    .topbarLinks {
+      display: none;
+    }
+}
+
+@media (max-width: 767px) {
+
+  .topbarIcons {
+    display: none;
+  }
+  .searchIcon {
+    display: none;
+  }
+  .searchbar {
+    padding: 0 10px;
+  }
+  .topbarContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .topbarLeft {
+    flex: 4;
+  }
+  .topbarCenter {
+    flex: 4;
+  }
+  .topbarRight {
+    flex: 4;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: white;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .searchbar {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .topbarImage {
+    display: none;
+  }
+}

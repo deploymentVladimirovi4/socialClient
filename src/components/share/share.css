@@ -1,0 +1,111 @@
+.share {
+  width: 100%;
+  min-height: 150px;
+  height: max-content;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  -webkit-box-shadow: 1px -1px 8px -3px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 1px -1px 8px -3px rgba(34, 60, 80, 0.2);
+  box-shadow: 1px -1px 8px -3px rgba(34, 60, 80, 0.2);
+}
+
+.shareWrapper {
+  padding: 10px;
+}
+
+.shareTop {
+  display: flex;
+  align-items: center;
+}
+
+.form {
+  width: 100%;
+}
+
+.shareInput{
+  width: 90%;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.shareProfileImg {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.shareHR {
+  margin: 20px 0;
+}
+
+.imgUrlInput  {
+  font-size: 14px;
+  padding: 10px;
+  width: 97%;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.713);
+  margin-bottom: 10px;
+}
+
+.shareBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.shareOptions {
+  display: flex;
+}
+
+.shareOption {
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.shareIcon {
+  font-size: 18px !important;
+  margin-right: 5px;
+}
+
+.shareBtn {
+  cursor: pointer;
+  width: 150px;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 500;
+  background-color: rgba(255, 255, 255, 0.618);
+  -webkit-box-shadow: 1px -1px 8px -3px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 1px -1px 8px -3px rgba(34, 60, 80, 0.2);
+  box-shadow: 1px -1px 8px -3px rgba(34, 60, 80, 0.2);
+}
+
+.shareBtn:hover {
+  background-color: white;
+  transition-duration: 300ms;
+}
+
+.shareBtn:active {
+  color: rgb(151, 50, 167);
+  transition-duration: 10ms;
+  -webkit-box-shadow: 5px 5px 39px -38px rgba(34, 60, 80, 0.6) inset;
+  -moz-box-shadow: 5px 5px 39px -38px rgba(34, 60, 80, 0.6) inset;
+  box-shadow: 5px 5px 39px -38px rgba(34, 60, 80, 0.6) inset;
+}
+
+@media (max-width: 767px) {
+  .shareBtn {
+    width: 100px;
+  }
+  .shareOptionText{
+    font-size: 12px;
+  }
+}

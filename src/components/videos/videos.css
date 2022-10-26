@@ -1,0 +1,125 @@
+.videos {
+  flex: 9.5;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: max-content;
+  min-height: 100vh;
+  background-color: rgba(255, 255, 255, 0.535);
+  box-sizing: border-box;
+}
+
+
+.videosContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+  align-items: center;
+}
+
+.videosTop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: space-around; */
+}
+
+.active {
+  color: white;
+  background-color: rgb(128, 90, 209) !important;
+}
+
+.search {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.searchVideoInput {
+  margin: 0 auto;
+  margin-bottom: 15px ;
+  padding: 15px 20px;
+  border: none;
+  width: 500px;
+  border-radius: 20px;
+  outline: none;
+  -webkit-box-shadow: 4px 4px 11px -1px rgba(34, 60, 80, 0.16);
+  -moz-box-shadow: 4px 4px 11px -1px rgba(34, 60, 80, 0.16);
+  box-shadow: 4px 4px 11px -1px rgba(34, 60, 80, 0.16);
+}
+
+.categoriesList {
+  list-style: none;
+  margin: 5px 35px 20px 25px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.categorieListItem {
+  cursor: pointer;
+  background-color: white;
+  padding: 12px 20px;
+  margin: 10px;
+  border-radius: 15px;
+  -webkit-box-shadow: 4px 4px 11px -1px rgba(34, 60, 80, 0.16);
+  -moz-box-shadow: 4px 4px 11px -1px rgba(34, 60, 80, 0.16);
+  box-shadow: 4px 4px 11px -1px rgba(34, 60, 80, 0.16);
+}
+
+.videosButtom {
+  height: max-content;
+  width: 98%;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, minmax(0, 1fr));;
+  gap: 1.2rem;
+}
+
+.videoSingleWrapper {
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.noResultsWrapper {
+  height: 70vh;
+  margin: 20px auto;
+}
+
+@media (max-width: 1000px) {
+  .videosButtom {
+    grid-template-columns: repeat(1, minmax(0, 1fr));;
+  }
+  .categoriesList{
+    margin: 5px;
+  }
+  .categorieListItem {
+    font-size: 14px;
+    padding: 15px;
+  }
+  .noResultsWrapper>img {
+    width: 300px;
+    margin: 20px auto;
+  }
+
+  .searchVideoInput {
+    width: 300px;
+  }
+}
+
+@media (max-width: 767px) {
+  .categoriesList{
+    padding: 0;
+  }
+  .videosContainer {
+    margin: 7px;
+  }
+}

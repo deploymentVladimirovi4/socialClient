@@ -1,0 +1,54 @@
+.app {
+  background-color:hsla(0,0%,100%,1);
+
+background-image:
+radial-gradient(at 40% 20%, hsla(297,100%,78%,1) 0px, transparent 50%),
+radial-gradient(at 80% 0%, hsla(338,100%,78%,1) 0px, transparent 50%),
+radial-gradient(at 0% 50%, hsla(264,100%,78%,1) 0px, transparent 50%),
+radial-gradient(at 80% 50%, hsla(249,100%,78%,1) 0px, transparent 50%),
+radial-gradient(at 0% 100%, hsla(165,100%,78%,1) 0px, transparent 50%),
+radial-gradient(at 80% 100%, hsla(29,100%,78%,0.74) 0px, transparent 50%),
+radial-gradient(at 0% 0%, hsla(252,100%,78%,1) 0px, transparent 50%); }
+
+.gradient {
+  background: linear-gradient(-45deg, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);;
+  background-size: 400% 400%;
+  animation: animate 7.5s ease-in-out infinite;
+
+
+@keyframes animate{
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
+  }
+}
+}
+
+/* radial-gradient(at 42% 4%, hsla(329,80%,63%,1) 0px, transparent 50%),
+radial-gradient(at 75% 28%, rgb(254, 184, 255) 0px, transparent 50%),
+radial-gradient(at 32% 49%, rgb(244, 159, 68) 0px, transparent 50%),
+radial-gradient(at 71% 91%, rgba(245, 94, 230, 0.334) 0px, transparent 50%),
+radial-gradient(at 23% 46%, hsla(305,87%,61%,1) 0px, transparent 50%),
+radial-gradient(at 12% 57%, hsla(244,75%,69%,1) 0px, transparent 50%),
+radial-gradient(at 27% 24%, hsla(209,65%,71%,1) 0px, transparent 50%); */
+
+/* radial-gradient(at 40% 20%, hsla(297,100%,78%,1) 0px, transparent 50%),
+radial-gradient(at 80% 0%, hsla(338,100%,78%,1) 0px, transparent 50%),
+radial-gradient(at 0% 50%, hsla(264,100%,78%,1) 0px, transparent 50%),
+radial-gradient(at 80% 50%, hsla(249,100%,78%,1) 0px, transparent 50%),
+radial-gradient(at 0% 100%, hsla(165,100%,78%,1) 0px, transparent 50%),
+radial-gradient(at 80% 100%, hsla(29,100%,78%,0.74) 0px, transparent 50%),
+radial-gradient(at 0% 0%, hsla(252,100%,78%,1) 0px, transparent 50%); */
+
+/* radial-gradient(at 40% 20%, hsla(270,100%,76%,1) 0px, transparent 50%),
+radial-gradient(at 80% 0%, hsla(311,63%,80%,1) 0px, transparent 50%),
+radial-gradient(at 0% 50%, hsla(237,100%,76%,1) 0px, transparent 50%),
+radial-gradient(at 80% 50%, hsla(222,100%,76%,1) 0px, transparent 50%),
+radial-gradient(at 0% 100%, hsla(264,100%,76%,1) 0px, transparent 50%),
+radial-gradient(at 80% 100%, hsla(2,32%,89%,0.74) 0px, transparent 50%),
+radial-gradient(at 0% 0%, hsla(225,100%,76%,1) 0px, transparent 50%); */
